@@ -1,0 +1,208 @@
+html {
+  font-family: Trebuchet MS;
+  background-color: #e1bee7;
+  text-align: justify; }
+
+  a {
+    display: inline;
+    vertical-align: top;
+    text-decoration: none; }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: #8e24aa; }
+
+      .clear {
+        clear: both; }
+
+        .button {
+          border-radius: 0;
+          border: 1px solid #8e24aa;
+          background: #8e24aa;
+          background-image: linear-gradient(to bottom, #8e24aa, #8e24aa);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0px 1px 3px #666666;
+          margin-top: 30px;
+          margin-bottom: 20px;
+          color: white;
+          font-size: 18px;
+          padding: 5px 15px;
+          cursor: pointer; }
+
+.header {
+  width: 900px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 15px;
+  border-color: #FAFAFA;
+  background: #FAFAFA;
+  float: left; }
+  .header .logo-left {
+    width: 300px;
+    float: left; }
+    .header .title-right {
+      width: auto;
+      float: right; }
+      .header .menuContainer {
+        width: 900px;
+        float: left;
+        text-align: left;
+        border-radius: 5px;
+        border: 1px solid #8e24aa;
+        background: #8e24aa;
+        background-image: linear-gradient(to bottom, #8e24aa, #8e24aa);
+        box-shadow: 0px 1px 3px #666666;
+        margin-top: 10px; }
+        .header .menuContainer .menu {
+          width: 850px; }
+          .header .menuContainer .menu ul {
+            margin: auto;
+            display: table;
+            table-layout: fixed; }
+            .header .menuContainer .menu ul li {
+              position: relative;
+              list-style-type: none;
+              margin: 10px;
+              display: inline-block; }
+              .header .menuContainer .menu ul li a {
+                color: white;
+                padding: 7px;
+                text-shadow: 0px -1px 0px #666666;
+                text-align: center;
+                font-size: 14pt;
+                text-decoration: none;
+                width: auto;
+                border: 1px solid transparent; }
+                .header .menuContainer .menu ul li ul {
+                  padding: 0;
+                  position: absolute;
+                  left: 0;
+                  width: 220px;
+                  -webkit-box-shadow: none;
+                  -moz-box-shadow: none;
+                  box-shadow: none;
+                  display: none;
+                  opacity: 0;
+                  visibility: hidden; }
+                  .header .menuContainer .menu ul li ul li {
+                    display: block;
+                    width: 203px;
+                    padding: 0;
+                    margin: 0;
+                    border: 1px solid transparent;
+                    border-radius: 5px; }
+                    .header .menuContainer .menu ul li ul li a {
+                      text-decoration: none;
+                      color: white;
+                      text-shadow: 0px -1px 0px #666666;
+                      text-align: left;
+                      display: block;
+                      padding-left: 10px;
+                      padding-top: 10px;
+                      padding-bottom: 10px;
+                      font-size: 13pt; }
+              .header .menuContainer .menu ul li:hover > a {
+                background: #6a1b9a;
+                border-style: solid;
+                border-radius: 5px;
+                border: 1px solid transparent;
+                background-image: linear-gradient(to bottom, #6a1b9a, #6a1b9a);
+                text-decoration: none; }
+                .header .menuContainer .menu ul li:hover ul {
+                  display: block;
+                  width: 205px;
+                  background: #8e24aa;
+                  border: 1px solid transparent;
+                  border-radius: 5px;
+                  margin-top: 8px;
+                  left: 0;
+                  opacity: 1;
+                  visibility: visible; }
+
+.footer {
+  text-align: center;
+  width: 900px;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 15px;
+  border-color: #FAFAFA;
+  background: #FAFAFA;
+  font-size: 10px;
+  float: left; }
+
+.bodyContainer {
+  width: 900px;
+  height: 90%;
+  margin: auto; }
+  .bodyContainer .mainBody {
+    width: 900px;
+    margin-top: 25px;
+    margin-bottom: 45px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 15px;
+    border-color: #FAFAFA;
+    background-color: #FAFAFA;
+    float: left; }
+    .bodyContainer .mainBody #mainText {
+      width: 600px;
+      margin: auto; }
+      .bodyContainer .mainBody #mainText h1 {
+        text-align: center;
+        margin-bottom: 40px; }
+        .bodyContainer .mainBody #mainText h2 {
+          text-align: left;
+          font-size: 20px; }
+
+#error {
+  color: red; }
+
+  .generalForm input {
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 12pt;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.18); }
+
+    .generalForm textarea {
+      border-radius: 5px;
+      border: 1px solid #cbcbcb;
+      padding: 10px;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.18);
+      font-size: 16px; }
+
+      .generalForm select {
+        border: 1px solid #DDD;
+        border-radius: 4px;
+        padding: 5px;
+        font-size: 10pt;
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.18); }
+
+.loginForm {
+  width: 300px;
+  padding-bottom: 20px;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 15px;
+  border-color: #FAFAFA;
+  background-color: #FAFAFA;
+  text-align: center; }
+  .loginForm .error {
+    background: #D32F2F;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: -15px;
+    border-radius: 5px;
+    color: white; }
+    .loginForm .control {
+      padding: 10px; }
+      .loginForm .control input {
+        width: 100%;
+        font-size: 17px;
+        text-align: center;
+        margin-left: -5px; }
+  .loginForm button {
+    margin-bottom: 0; }

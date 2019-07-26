@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+      <link rel=stylesheet type=text/css href="main.css">
+  </head>
+  <body>
+<div class="bodyContainer">
+
+<div class="header">
+  <div class="logo-left">
+    <a href="/">
+      <img src="logo.png" alt="logo">
+    </a>
+  </div>
+
+  <div class="title-right">
+    <a href="/">
+      <h4>International Society for Computers and their Applications</h4>
+    </a>
+  </div>
+
+  <div class="clear"></div>
+
+  <div class="menuContainer">
+    <div class="menu">
+      <ul>
+
+        <li><a href="index.html">Home</a></li>
+
+        <li>
+          <a href="">About</a>
+          <ul>
+            <li><a href="letter_president.html">Letter from the president</a></li>
+            <li><a href="board_of_directors.html">Board of Directors</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="">Membership</a>
+          <ul>
+            <li><a href="senior_membership.html">Senior membership</a></li>
+            <li><a href="basic_membership.html">Basic membership</a></li>
+          </ul>
+        </li>
+
+        <li><a href="conferences.html">Conferences</a></li>
+
+        <li>
+          <a href="">Materials</a>
+          <ul>
+            <li><a href="journals.html">Journal</a></li>
+            <li><a href="proceedings.html">Proceedings</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact</a></li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+	<div class="mainBody">
+		<div id="mainText">
+			{% if content.name %}
+			<h1>Welcome {{ content.name }}</h1>
+			{% endif %}
+
+			{% if content.contact %}
+				{% for current in content.contact %}
+					<h2>NAME: {{ current.name }}</h2>
+					<p>EMAIL: {{ current.email }}</p>
+					<p>MESSAGE: {{ current.message }}</p>
+					<p>AREA OF CONCERN : {{ current.emailto }}</p>
+					<br>
+				{% endfor%}
+			{% endif %}
+			
+			<a href="/logout">
+				<button class="button">Logout</button>
+			</a>
+		</div>
+	</div>
+
+	<div class="clear"></div>
+
+<div class="footer">
+  <p>Copyright ©2014 International Society for Computers and Their Applications (ISCA). All Rights Reserved</p>
+  <p>ISCA, 278 Mankato Ave. #220, Winona, MN 55987, USA</p>
+  <p>email: isca@isca-hq.org</p>
+</div>
+
+</div>
+  </body>
+</html>
